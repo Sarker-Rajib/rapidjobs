@@ -1,0 +1,64 @@
+.footer {
+    padding: 50px;
+
+    @media(max-width:767px) {
+        padding: 20px;
+    }
+
+    .foot-nav-logo {
+        color: #FF6113;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: -.04em;
+
+        span {
+            color: #7F417F;
+        }
+
+        @media(max-width:767px) {
+            font-size: 25px;
+            padding-bottom: 25px;
+        }
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width:767px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            a {
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+                color: #434242cc;
+                padding: 0 10px;
+                margin: 0 10px;
+
+                &:hover {
+                    color: #eb6320;
+                }
+            }
+        }
+    }
+
+    .f-bottom {
+        p {
+            color: #434242cc;
+        }
+
+        a {
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            color: #434242cc;
+            text-decoration: underline;
+        }
+    }
+}

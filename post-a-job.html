@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Post a job</title>
+  <link rel='shortcut icon' href='assets/images/favicon-32x32.png' type='image/x-icon'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header class="dashboard-header p-3 d-flex align-items-center justify-content-between" style="z-index: 999;">
+    <div class="d-flex align-items-center">
+      <button class="btn d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu">
+        <img style="max-width: 30px;" src="assets/images/icons/three-line-horizontal-svgrepo-com.svg" alt="aa"
+          class="img-fluid">
+      </button>
+      <h4 class="nav-logo p-0 m-0">rapidjobs<span>.careers</span></h4>
+
+      <ul class="d-none d-lg-flex align-items-center">
+        <li><a style="color: #94a4b3; margin: 0px 10px;" href="#">Job Seeker</a></li>
+        <li><a style="color: #94a4b3; margin: 0px 10px;" href="#">Business</a></li>
+        <li><a style="color: #94a4b3; margin: 0px 10px;" href="#">Get All Jobs</a></li>
+      </ul>
+    </div>
+    <div class="d-flex">
+      <button class="btn me-3 text-white d-none d-md-inline-block" style="background: #4d9a55;">POST JOBS <span>FOR
+          FREE</span></button>
+      <div class="dropdown">
+        <p class="d-flex rounded-circle text-white align-items-center justify-content-center"
+          style="width: 40px; height: 40px; background: #616161; cursor: pointer;" data-bs-toggle="dropdown"
+          aria-expanded="false">S</p>
+
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item d-flex align-items-center" href="#">
+              <img src="assets/images/icons/monitor-svgrepo-com.svg" alt="q" style="max-width: 20px;">
+              <span class="mx-2"></span> Dashboard</a>
+          </li>
+          <li class="d-block">
+            <hr class="my-2">
+          </li>
+          <li>
+            <a class="dropdown-item d-flex align-items-center" href="#">
+              <img src="assets/images/icons/logout-svgrepo-com.svg" alt="q" style="max-width: 20px;">
+              <span class="mx-2"></span> Log out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="pt-5 pb-4"></div>
+  <main class="post-a-job">
+    <!-- form -->
+    <section>
+      <div class="container">
+        <form>
+          <div class="wrapper">
+            <h5>Post Your job</h5>
+            <br>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="s" placeholder="Job Title" required>
+              <label for="s">Job Title</label>
+              <p class="query">?</p>
+            </div>
+
+            <div class="form-floating pb-3">
+              <textarea class="form-control" placeholder="Leave a comment here" id="des"
+                style="height: 300px"></textarea>
+              <label for="floatingTextarea2">Job Description</label>
+              <p class="query">?</p>
+            </div>
+
+            <p class="pb-3" style="font-size: 14px;">What kind of employee are you hiring</p>
+            <div class="pb-3 d-md-flex">
+              <div class="form-check me-3">
+                <input type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  In-offine only
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Remote accepted or remote-only
+                </label>
+              </div>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="stAddress" placeholder="Name" required>
+              <label for="floatingInput">Street Address</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="apttAddress" placeholder="Name" required>
+              <label for="floatingInput">Apt / Suite / Unit</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="loc" placeholder="Name" required>
+              <label for="floatingInput">Location</label>
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="zip-loc" placeholder="Name" required>
+                  <label for="floatingInput">Zipcode</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="zcp-loc" placeholder="Name" required>
+                  <label for="floatingInput">Country</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="pb-3">
+              <p>Employment Type</p>
+            </div>
+
+            <div class=" mb-3">
+              <select class=" py-3 form-select">
+                <option value="">please select</option>
+                <option value="">option</option>
+                <option value="">option</option>
+                <option value="">option</option>
+                <option value="">option</option>
+              </select>
+            </div>
+
+            <div class="pb-3 d-md-flex">
+              <div class="form-check me-3">
+                <input class="form-check-" type="radio" name="salary" id="salary1" checked>
+                <label class="form-check-label" for="salary1">
+                  Salary
+                </label>
+              </div>
+              <div class="form-check d-flex">
+                <input class="form-check me-2" type="radio" name="salary" id="salary2">
+                <label class="form-check-label" for="salary2">
+                  Salary Range
+                </label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="a" placeholder="Name" required>
+                  <label for="aa">Salary</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-floating mb-3">
+                  <select class="form-select">
+                    <option value="">Per Year</option>
+                    <option value="">Per Month</option>
+                  </select>
+                  <label for="aa">Salary Timeframe</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-floating mb-3">
+                  <select class="form-select">
+                    <option value="">USD</option>
+                    <option value="">GBP</option>
+                  </select>
+                  <label for="aa">Currency</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="pb-3">
+              <p>Education level</p>
+            </div>
+
+            <div class=" mb-3">
+              <select class=" py-3 form-select">
+                <option value="">Please select</option>
+                <option value="">option</option>
+                <option value="">option</option>
+                <option value="">option</option>
+                <option value="">option</option>
+              </select>
+            </div>
+
+            <div class="form-floating pb-3">
+              <textarea class="form-control" placeholder="Leave a comment here" id="des"
+                style="height: 120px"></textarea>
+              <label for="floatingTextarea2">Experience</label>
+              <p class="query">?</p>
+            </div>
+
+            <div class="form-floating pb-3">
+              <textarea class="form-control" placeholder="Leave a comment here" id="des"
+                style="height: 120px"></textarea>
+              <label for="floatingTextarea2">Qualification</label>
+              <p class="query">?</p>
+            </div>
+
+            <div class="form-floating pb-3">
+              <textarea class="form-control" placeholder="Leave a comment here" id="des"
+                style="height: 120px"></textarea>
+              <label for="floatingTextarea2">Skills</label>
+              <p class="query">?</p>
+            </div>
+
+            <div class="form-floating pb-3">
+              <textarea class="form-control" placeholder="Leave a comment here" id="des"
+                style="height: 120px"></textarea>
+              <label for="floatingTextarea2">Responsibilities</label>
+              <p class="query">?</p>
+            </div>
+
+
+            <div class="pb3">
+              <p class="pb-2">Will this job post expire?</p>
+              <div class="pb-3 d-md-flex">
+                <div class="form-check me-3 d-flex">
+                  <input class="form-check me-2" type="radio" name="yesno" id="yesno1" checked>
+                  <label class="form-check-label" for="yesno1">
+                    Yes
+                  </label>
+                </div>
+                <div class="form-check d-flex">
+                  <input class="form-check me-2" type="radio" name="yesno" id="yesno2">
+                  <label class="form-check-label" for="yesno2">
+                    No
+                  </label>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="pb3">
+              <p class="pb-2">How would you like to receive application?</p>
+              <div class="pb-3 ">
+                <div class="form-check  d-flex align-items-start mb-2">
+                  <input class="form-check me-3" type="radio" name="temp3" id="temp31" checked>
+                  <label class="form-check-label" for="temp31">
+                    Receive application notification by mail <br>
+                    <span style="color: #000;">Users will apply on Get.it and we will notify you of tjeir
+                      application.</span>
+                  </label>
+                </div>
+                <div class="form-check d-flex align-items-start ">
+                  <input class="form-check me-3" type="radio" name="temp3" id="temp32">
+                  <label class="form-check-label" for="temp32">
+                    Send applicants to URL <br>
+                    <span style="color: #000;">
+                      Users will be redirected to an external URL that you provide.
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <p class="my-2">Send application notification to this mail</p>
+            <div class="form-floating pb-3">
+              <input class="form-control" placeholder="Leave a comment here" id="des" />
+              <label for="floatingTextarea2">Email Address</label>
+              <p class="query">?</p>
+            </div>
+
+            <div class="chat-not">
+              <img style="max-width: 30px; float: left; margin-right: 10px; padding: 0;"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png"
+                alt="">
+              <p style="text-align: justify;">Your job posting is now enhanced with ChatGPT to create a more engaging
+                and
+                unique posting, increasing
+                the number of applicants and improving search engine visibility. Our enhancing process may adjust both
+                the
+                job description and job title based on where we see the biggest areas for improvement. This ensures your
+                job stands out from competitors, leading to a better chance of finding the right candidate. You can view
+                both the original and enhanced versions of your job posting on the job management page after posting.
+              </p>
+            </div>
+
+            <div class="d-flex pt-4 justify-content-between">
+              <div>
+                <button class="btn">CANCEL</button>
+              </div>
+              <div>
+                <button class="btn me-2" style="background: #9797975d; color: #94a4b3;">
+                  SAVE TO DRAFT
+                </button>
+                <button class="btn" style="background: #eb6320; color:#fff;">
+                  POST
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- menu offcanvus -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="menu" aria-labelledby="menuLabel">
+    <div class="offcanvas-header">
+      <h4 class="foot-nav-logo">rapidjobs<span>.careers</span></h4>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body pt-0">
+      <div>
+        <ul class="pt-0">
+          <li class="d-block">
+            <hr class="my-2">
+          </li>
+          <li>
+            <button class="btn text-white" style="background: #4d9a55; width: 100%;">POST JOBS FOR FREE</button>
+          </li>
+          <li class="d-block">
+            <hr class="my-2">
+          </li>
+          <li>
+            <a href="#" class="nav-linka">
+              <img style="max-width: 20px;" src="assets/images/icons/building-2-svgrepo-com.svg" alt="icon">
+              <span>Business</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-linka">
+              <img style="max-width: 20px;" src="assets/images/icons/briefcase-svgrepo-com.svg" alt="icon">
+              <span>Job Seeker</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-linka">
+              <img style="max-width: 20px;" src="assets/images/icons/menu-svgrepo-com.svg" alt="icon">
+              <span>Get All Jobs</span>
+            </a>
+          </li>
+          <li class="d-block">
+            <hr class="my-2">
+          </li>
+          <li>
+            <a href="#" class="nav-linka">
+              <img style="max-width: 20px;" src="assets/images/icons/comment.png" alt="icon">
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <h4 class="foot-nav-logo">rapidjobs<span>.careers</span></h4>
+
+      <ul class="p-0">
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+
+    </div>
+    <div class="f-bottom text-center pt-5">
+      <p class="pt-3">This site is protected by reCAPTCHA and the
+        Google <a href="#">Privacy Policy </a>
+        and <a href="#"> Terms of
+          Service</a> apply.</p>
+    </div>
+  </footer>
+
+  <!-- all scripts are starts from here -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- .........script ended............. -->
+</body>
+
+</html>

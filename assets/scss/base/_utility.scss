@@ -1,0 +1,23 @@
+.pb150 {
+   padding-bottom: 150px;
+
+   @media(max-width:767px) {
+      padding-bottom: 100px;
+   }
+}
+
+.pb100 {
+   padding-bottom: 100px;
+
+   @media(max-width:767px) {
+      padding-bottom: 60px;
+   }
+}
+
+.pb60 {
+   padding-bottom: 60px;
+
+   @media(max-width:767px) {
+      padding-bottom: 40px;
+   }
+}

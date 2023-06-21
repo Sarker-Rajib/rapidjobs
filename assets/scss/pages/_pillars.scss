@@ -1,0 +1,248 @@
+.pillars {
+
+    .p-banner {
+        padding: 150px 0;
+
+        @media(max-width:767px) {
+            padding: 120px 0;
+        }
+
+        .banner-nav-logo {
+            color: #FF6113;
+            font-size: 90px;
+            font-weight: 700;
+            letter-spacing: -.04em;
+
+            span {
+                color: #7F417F;
+            }
+
+            @media(max-width:767px) {
+                font-size: 55px;
+            }
+        }
+
+        .container {
+            max-width: 1150px;
+        }
+
+        .cards {
+            padding-top: 150px;
+
+            .c-card {
+                padding: 50px 40px;
+                box-shadow: 0 6px 6px -3px rgba(0, 0, 0, .2), 0 10px 14px 1px rgba(0, 0, 0, .14), 0 4px 18px 3px rgba(0, 0, 0, .12) !important;
+                border-radius: 5px;
+                min-height: 500px;
+                position: relative;
+
+                @media(max-width:767px) {
+                    min-height: 400px;
+                }
+
+                .image {
+                    min-height: 120px;
+                    text-align: center;
+
+                    img {
+                        max-width: 100px;
+                    }
+                }
+
+                .btn-bt {
+                    position: absolute;
+                    bottom: 40px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    min-width: 150px;
+                    padding: 10px 10px;
+                    white-space: nowrap;
+                    border-radius: 5px;
+                    text-transform: uppercase;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #4d9a55 !important;
+                    color: #fff !important;
+                    transition: all 0.3s;
+                    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+
+                    &:hover {
+                        background: #3ac248 !important;
+                    }
+                }
+
+                p {
+                    padding: 20px 0;
+                }
+
+                &.f {
+                    background: #884588;
+                }
+
+                &.s {
+                    background: #6d2c6f;
+                }
+
+                &.t {
+                    background: #531456;
+                }
+            }
+        }
+    }
+
+    .only-text {
+        .container {
+            max-width: 900px;
+
+            .discover {
+                background: #531456;
+                padding: 100px;
+
+                @media(max-width:767px) {
+                    padding: 50px 10px;
+
+                    h2 {
+                        font-size: 25px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                    }
+                }
+
+
+                .btn-bt {
+                    padding: 10px 40px;
+                    white-space: nowrap;
+                    border-radius: 5px;
+                    text-transform: uppercase;
+                    background: #4d9a55 !important;
+                    color: #fff !important;
+                    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+                }
+            }
+        }
+    }
+
+    .find-team {
+        padding: 150px 0;
+
+        @media(max-width:767px) {
+            padding: 100px 0;
+        }
+
+        .container {
+            max-width: 830px;
+
+            .wrapper {
+                border: 2px solid #531456;
+                padding: 10px;
+                border-radius: 10px;
+                padding: 100px 35px 50px;
+
+                .top {
+                    h2 {
+                        color: #434242;
+                        font-size: 60px;
+                        font-style: normal;
+                        font-weight: 700;
+                        letter-spacing: -.04em;
+                        text-align: center;
+                        padding-bottom: 60px;
+
+                        @media(max-width:767px) {
+                            font-size: 40px;
+                        }
+                    }
+
+                    p {
+                        color: #000;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 28px;
+                        font-weight: 400;
+                        text-align: center;
+                        padding-bottom: 50px;
+                    }
+                }
+
+                .navigators {
+                    position: relative;
+
+                    .step {
+                        background: #ffffff;
+                        z-index: 1;
+
+                        &.uncovered {
+                            .number {
+                                background: #75817e;
+                            }
+
+                            .text {
+                                color: #75817e;
+                            }
+                        }
+                    }
+
+                    .number {
+                        margin: auto;
+                        background: #000;
+                        border-radius: 50%;
+                        color: #fff;
+                        height: 30px;
+                        width: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                    }
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        top: 15px;
+                        height: 1px;
+                        width: 100%;
+                        background: #000;
+                    }
+                }
+
+                .google-btn {
+                    text-align: left;
+                    background: #fff;
+                    border-radius: 10px;
+                    padding: 10px;
+                    border: 1px solid #9e9a9a;
+                }
+
+                .terms {
+                    padding: 30px 0;
+                    text-align: center;
+
+                    p {
+                        font-style: normal;
+                        font-weight: 400;
+                        color: rgba(0, 0, 0, .7);
+                        font-size: 12px;
+
+                        a {
+                            color: #000;
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .sign-up {
+                        border-radius: 5px;
+                        border: none;
+                        background: #4d9a55;
+                        color: #fff;
+                        font-size: 20px;
+                        letter-spacing: 1.25px;
+                        font-weight: 400;
+                        padding: 10px 20px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,205 @@
+.home {
+    .banner {
+        padding: 130px 0 0px;
+        overflow: hidden;
+
+        .container {
+            max-width: 1000px;
+
+            h1 {
+                color: #FF6113;
+                font-size: 80px;
+                font-weight: 700;
+                letter-spacing: -.04em;
+
+                span {
+                    color: #7F417F;
+                }
+
+                @media(max-width:767px) {
+                    font-size: 50px;
+                }
+            }
+
+            h2 {
+                color: #434242;
+                text-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+                font-size: 60px;
+                font-weight: 700;
+                letter-spacing: -.04em;
+                margin-top: 40px;
+                position: relative;
+                padding-bottom: 100px;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    height: 200px;
+                    width: 500px;
+                    background: url(../images/rc.png) no-repeat center center/contain;
+                    left: 0;
+                    bottom: -30px;
+                    opacity: 0.1;
+                }
+
+                @media(max-width:767px) {
+                    font-size: 35px;
+
+                    &::after {
+                        width: 300px;
+                        height: 130px;
+                    }
+                }
+            }
+
+            span {
+                color: #7f417f;
+            }
+        }
+    }
+
+    .section-purple {
+        padding: 100px 0;
+        background: #7f417f;
+
+        .container {
+            max-width: 900px;
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: -.04em;
+            padding-bottom: 30px;
+
+            @media(max-width:767px) {
+                font-size: 35px;
+            }
+        }
+
+        p {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 400;
+            padding-bottom: 40px;
+
+            @media(max-width:767px) {
+                font-size: 20px;
+            }
+        }
+
+        img {
+            margin-bottom: 30px;
+        }
+
+        .btn-hire {
+            background: #4d9a55;
+            align-items: center;
+            color: #fff;
+            padding: 15px 100px;
+            box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+
+            &:hover {
+                background: #6ec276;
+            }
+        }
+    }
+
+    .section-search {
+        padding: 100px 0;
+        background: #eb6320;
+
+        .container {
+            max-width: 900px;
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: -.04em;
+            padding-bottom: 10px;
+
+            @media(max-width:767px) {
+                font-size: 35px;
+            }
+        }
+
+        p {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 400;
+            padding-bottom: 40px;
+
+            @media(max-width:767px) {
+                font-size: 20px;
+            }
+        }
+
+        input {
+            padding-block: 10px;
+        }
+
+        .btn-hire {
+            background: #4d9a55;
+            align-items: center;
+            color: #fff;
+            padding-block: 10px;
+            width: 100%;
+            box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+
+            &:hover {
+                background: #6ec276;
+            }
+        }
+    }
+
+    .getIt {
+        padding: 100px 0;
+
+        .container {
+            max-width: 900px;
+        }
+
+        h2 {
+            color: #434242;
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: -.04em;
+            padding-bottom: 50px;
+
+            .get {
+                color: #ff6113;
+            }
+
+            .it {
+                color: #7f417f;
+            }
+
+            @media(max-width:767px) {
+                font-size: 35px;
+                padding-bottom: 35px;
+            }
+        }
+
+        p {
+            color: #000;
+            font-size: 20px;
+            font-weight: 400;
+
+            @media(max-width:767px) {
+                font-size: 18px;
+            }
+        }
+
+        a {
+            font-family: 'Roboto', sans-serif;
+            color: #000;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 1.3px;
+        }
+
+    }
+}
